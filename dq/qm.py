@@ -6,4 +6,4 @@ def scf(mol_name):
 
 
 def dft(mol_name):
-    return len(mol_name) - 1
+    return len(mol_name) - 2
