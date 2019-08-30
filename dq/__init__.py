@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from dq.qm import scf
+from dq.qm import scf, dft
