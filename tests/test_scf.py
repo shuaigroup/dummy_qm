@@ -8,4 +8,4 @@ def test_scf():
 
 
 def test_dft():
-    assert scf("H2O") == 2
+    assert dft("H2O") == 1
