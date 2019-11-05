@@ -8,3 +8,15 @@ install:
 
 script:
     - pytest
+
+
+before_deploy:
+    - cd doc; bash makedoc.sh
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $github_token
+    local_dir: doc/html
+    verbose: true
+    on:
+        branch: master
